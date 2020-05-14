@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:layout_marginLeft="10dp"
+>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              android:text="country"
+              android:textSize="30dp"
+              android:id="@+id/country_name"
+    />
+
+    <!-- cases -->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/country_name"
+              app:layout_constraintLeft_toLeftOf="parent"
+              android:text="cases: "
+              android:textSize="18dp"
+              android:id="@+id/_cases"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/country_name"
+              app:layout_constraintLeft_toRightOf="@id/_cases"
+              android:text="111"
+              android:textSize="18dp"
+              android:id="@+id/cases"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/country_name"
+              app:layout_constraintLeft_toRightOf="@id/cases"
+              android:text="|today: "
+              android:textSize="18dp"
+              android:id="@+id/_todays_cases"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/country_name"
+              app:layout_constraintLeft_toRightOf="@id/_todays_cases"
+              android:text="xxx "
+              android:textSize="18dp"
+              android:id="@+id/todays_cases"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/country_name"
+              app:layout_constraintLeft_toRightOf="@id/todays_cases"
+              android:text="|Active: "
+              android:textSize="18dp"
+              android:id="@+id/_active_cases"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/country_name"
+              app:layout_constraintLeft_toRightOf="@id/_active_cases"
+              android:text="xxxx"
+              android:textSize="18dp"
+              android:id="@+id/active_cases"
+    />
+
+    <!--deaths-->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_cases"
+              app:layout_constraintLeft_toLeftOf="parent"
+              android:text="deaths: "
+              android:textSize="18dp"
+              android:id="@+id/_deaths"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_cases"
+              app:layout_constraintLeft_toRightOf="@id/_deaths"
+              android:text="xxxx"
+              android:textSize="18dp"
+              android:id="@+id/deaths"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_cases"
+              app:layout_constraintLeft_toRightOf="@id/deaths"
+              android:text="|today: "
+              android:textSize="18dp"
+              android:id="@+id/_todays_deaths"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_cases"
+              app:layout_constraintLeft_toRightOf="@id/_todays_deaths"
+              android:text="XXX"
+              android:textSize="18dp"
+              android:id="@+id/todays_deaths"
+    />
+
+    <!--status-->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_deaths"
+              app:layout_constraintLeft_toLeftOf="parent"
+              android:text="recovered: "
+              android:textSize="18dp"
+              android:id="@+id/_recovered"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_deaths"
+              app:layout_constraintLeft_toRightOf="@id/_recovered"
+              android:text="xxx"
+              android:textSize="18dp"
+              android:id="@+id/recovered"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_deaths"
+              app:layout_constraintLeft_toRightOf="@id/recovered"
+              android:text="|critical: "
+              android:textSize="18dp"
+              android:id="@+id/_critical"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/_deaths"
+              app:layout_constraintLeft_toRightOf="@id/_critical"
+              android:text="xxx"
+              android:textSize="18dp"
+              android:id="@+id/critical"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
